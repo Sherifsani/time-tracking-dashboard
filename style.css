@@ -41,9 +41,7 @@ main{
     width: 70vw;
     background-color: #fff;
     height: 70vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
     gap: 15px;
     background-color: var(--Very-dark-blue);
     color: #fff;
@@ -166,4 +164,11 @@ h3{
 }
 .active{
     color: white;
+}
+@media(min-width:600px){
+ main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
 }
